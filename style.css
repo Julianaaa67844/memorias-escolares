@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -12,9 +11,9 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #9370DB; /* Roxo claro mais escuro */
     color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -25,22 +24,52 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    position: relative;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 nav ul li a {
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    display: inline-block;
+    background-color: #7B68EE; /* Roxo médio */
+    border-radius: 5px;
 }
 
+nav ul li a:hover {
+    background-color: #6A5ACD; /* Cor ao passar o mouse */
+}
+
+main {
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #7B68EE; /* Cor dos títulos roxo médio */
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #9370DB; /* Roxo claro mais escuro */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Estilo para listas dentro de submenus */
 nav ul li ul {
     display: none;
     position: absolute;
-    background-color: #4CAF50;
+    background-color: #9370DB;
     padding: 0;
+    margin-top: 5px;
 }
 
 nav ul li:hover ul {
@@ -51,24 +80,12 @@ nav ul li ul li {
     display: block;
 }
 
-main {
-    padding: 20px;
-}
-
-h2, h3 {
-    color: #4CAF50;
-    margin-bottom: 10px;
-}
-
-p {
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-footer {
-    background-color: #D8BFD8; /* Rodapé roxo claro */
-    color: white;
-    text-align: center;
+nav ul li ul li a {
+    display: block;
     padding: 10px;
-    margin-top: 20px;
+    background-color: #7B68EE; /* Roxo médio */
+}
+
+nav ul li ul li a:hover {
+    background-color: #6A5ACD;
 }
